@@ -7,16 +7,69 @@
 </head>
 <body>
     <h1>Meine erste Seite</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas provident ducimus ratione perspiciatis quidem, atque quas dolor. Sapiente aut eum dolor totam ea hic itaque, a excepturi laboriosam voluptatum vero voluptas recusandae quibusdam et doloremque, aspernatur facilis. Harum ipsum eius illo incidunt nesciunt eum dolore dignissimos tempora, numquam explicabo fugiat fuga nobis! Ad natus architecto modi rerum tempore, eos repellat sit in nulla distinctio pariatur veniam ipsa! Blanditiis dolorum nihil, ducimus corrupti explicabo nam ut. Nesciunt corrupti neque voluptatum quia incidunt quibusdam blanditiis rerum temporibus amet distinctio. Molestiae veniam, nemo, aut dolor dolorem ipsam voluptatibus blanditiis quibusdam repellat et placeat excepturi, sint maxime quas. Voluptatibus, asperiores. Tempore possimus in error perspiciatis quia ab, similique repudiandae iste cum laborum, beatae iure suscipit aperiam dolorem aliquam quaerat ipsum! Quas adipisci dicta unde nisi, in harum labore a qui eius maiores deleniti, obcaecati, ad fugit hic repudiandae earum. Iste beatae optio ducimus fugit saepe officia consequuntur natus, neque cum magnam voluptates odit unde sed itaque impedit nam possimus ipsum doloribus quae consectetur nulla odio vero libero quis! Saepe, ut praesentium! Molestiae saepe reiciendis expedita vel, cupiditate illo. Inventore cupiditate iste placeat. Quod vel, libero aliquid velit eos possimus cum eligendi quo quibusdam doloribus.
-    </p>
-    <p>
-    <?php  
-    print("Hallo World");
-
-    echo"So geht es auch... ist aber veraltet";
     
-    phpinfo();
+    <?php  
+    $name = "Ingo Mörl";
+
+    print("<h2>Hallo, lieber$name!</h2>");
+
+    print('<h2>Hallo, lieber$name!</h2>');
+
+    $zahl1 = 2;
+    $zahl2 = 10;
+
+    print("Meine Zahlen $zahl1, $zahl2");
+    print("<br />");
+    var_dump($zahl1);
+    print("<br />");
+    var_dump($zahl2);
+
+    $zeichen1 = "m";
+    $zeichen2 = "ö";
+
+    print("<br />");
+    var_dump($zeichen1);
+    print("<br />");
+    var_dump($zeichen2);
+
+    // 1.... 10 (int)
+    // 1.0 ... 10.0 (float)
+    print("<br />");
+    // +
+    print("$zahl1 + $zahl2 =".$zahl1+$zahl2);
+
+    // -
+    print("<br />");
+    print("$zahl1 - $zahl2 =".$zahl1-$zahl2);
+    
+    // *
+    print("<br />");
+    print("$zahl1 * $zahl2 =".$zahl1*$zahl2);
+
+    // /
+    print("<br />");
+    print("$zahl1 / $zahl2 =".$zahl1/$zahl2);
+    
+    // %
+    print("<br />");
+    print("$zahl1 % $zahl2 =".$zahl1%$zahl2);
+    
+    // **
+    print("<br />");
+    print("$zahl1 ** $zahl2 =".$zahl1**$zahl2);
+
+    for ($i = 0; $i <= 10; $i++) {
+        print("<br />");
+        print("2 ** $i = ".(2**$i));
+    }
+
+    $i = 0;
+    while($i < 20){
+        print("<br />");
+        print("2 ** $i = ".(2**$i));
+
+        $i = $i + 1;
+    }
 
     ?>
     </p>
